@@ -1,0 +1,27 @@
+.section_contrate{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #cc092f;
+}
+.section_contatre-container{
+    width: 100%;
+    max-width: 650px;
+    padding: 40px 20px 40px 20px;
+}
+.section_contatre-container h2{
+    color: #fff;
+    padding-left: 15px;
+    border-left: 6px solid #fff;
+}
+
+.section_contatre-container h2 span{
+    font-weight: 700;
+}
+
+.section_contatre-container p{
+    font-size: 16px!important;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}

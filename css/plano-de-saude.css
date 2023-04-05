@@ -1,0 +1,155 @@
+.section_plano-saude{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.section_plano_saude-container{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.section_plano_saude-container h2{
+    color: #404241;
+    padding-left: 15px;
+    border-left: 6px solid #cc1331;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.section_plano_saude-container p{
+    font-size: 20px;
+    line-height: 1.6;
+    color:#666666c7;
+    font-weight: 300 ;
+    margin: 20px 0px;
+}
+
+.plano_de_saude-grid-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.plano_de_saude-grid-cards div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 40px 15px 40px 15px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+    height: 100%;
+    max-height: 80px;
+    color: #404241;
+}
+.plano_de_saude-grid-cards h3{
+    font-size: 22px;
+    line-height: 1.2;
+}
+.plano_de_saude-grid-cards p{
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0px !important;
+}
+
+.plano_de_saude-grid-contratos{
+    display: grid;
+    grid-template-columns: repeat(6,minmax(1px,1fr));
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.contratos-card:nth-child(n-4){
+    grid-column: span 2;
+    max-width: 254px;
+}
+.contratos-card:nth-child(n+4){
+   grid-column: span 3;
+   max-width: 100%;
+}
+
+.contratos-card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.contratos-card img{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 40px;
+    max-height: 45px;
+}
+.contratos-card p:first-child{
+    font-size: 14px;
+    font-weight: 700;
+    color: #404241;
+    line-height: 1.2;
+    margin: 0 !important;
+}
+.contratos-card p:last-child{
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 15px 0px !important;
+}
+
+.plano_de_saude-empresarial{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    row-gap: 40px;
+    margin: 50px 0px;
+}
+.card-empresarial {
+    max-width: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.card-empresarial img{
+    max-width: 38px;
+    max-height: 38px;
+}
+.card-empresarial p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #404241;
+    line-height: 1.2;
+    margin: 0 !important;
+}
+
+@media(max-width:992px){
+    .plano_de_saude-grid-cards{
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+    .plano_de_saude-grid-contratos{
+        grid-template-columns: 1fr;
+       justify-items: center;
+    }
+    .contratos-card{
+        max-width: 350px !important;
+    }
+    .plano_de_saude-empresarial{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-empresarial{
+        max-width: 300px;
+        align-items: center;
+    }
+    .section_plano_saude-container p{
+        font-size: 18px;
+    }
+}
